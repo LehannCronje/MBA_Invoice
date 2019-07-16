@@ -88,7 +88,17 @@ async function convertHelper(document, exportFct) {
     invoice3.invoice3(412154.40,ba,cust);
     
     convertHelper("./invoices/invoice1.docx", "exportPDF").then((arrayBuffer) => {
-        fs.writeFileSync("sample.pdf", new Uint8Array(arrayBuffer));
+        fs.writeFileSync("./pdf/invoice1.pdf", new Uint8Array(arrayBuffer));
+    }).catch((e) => {
+        console.error(e);
+    });
+    convertHelper("./invoices/invoice2.docx", "exportPDF").then((arrayBuffer) => {
+        fs.writeFileSync("./pdf/invoice2.pdf", new Uint8Array(arrayBuffer));
+    }).catch((e) => {
+        console.error(e);
+    });
+    convertHelper("./invoices/invoice3.docx", "exportPDF").then((arrayBuffer) => {
+        fs.writeFileSync("./pdf/invoice3.pdf", new Uint8Array(arrayBuffer));
     }).catch((e) => {
         console.error(e);
     });
