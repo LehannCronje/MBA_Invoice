@@ -1,0 +1,35 @@
+{
+  "name": "mba_invoice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@nativedocuments/docx-wasm": "^2.2.13-1561490777",
+    "docx-pdf": "^0.0.1",
+    "docxtemplater": "^3.13.6",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "jszip": "^2.2.2",
+    "node-datetime": "^2.1.2",
+    "nodemon": "^1.19.1",
+    "office-converter": "^1.0.2",
+    "word2pdf": "^1.0.7"
+  },
+  "devDependencies": {
+    "express-zip": "^2.0.1",
+    "mammoth": "^1.4.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LehannCronje/MBA_Invoice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LehannCronje/MBA_Invoice/issues"
+  },
+  "homepage": "https://github.com/LehannCronje/MBA_Invoice#readme"
+}

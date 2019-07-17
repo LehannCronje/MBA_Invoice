@@ -1,0 +1,40 @@
+<script>
+$(document).ready(function(){
+    var i = 0;
+  $("#click").click(function(){
+        //$('#selectContainer').append("<select id=client"+i+" name=client"+i+"></select>");
+        //$('#client').find('option').clone().appendTo('#client'+i);
+        $('.goods').append('<div id=item'+i+'></div>');
+        $('#item').find(".content").clone().appendTo('#item'+i);
+    i++;
+  });
+
+});
+</script>
+
+<form action="/generateInvoice" method="post">
+<div id="selectContainer">
+    <select name="client" id="client">
+        {{#each options}}
+            <option value="scuderia">{{this}}</option>
+        {{/each}}
+    </select>
+</div>
+    <div class="goods">
+        <div id="item">
+            <div class="content">
+                <select name="goodsD" id="goodsD">
+                {{#each goodsD}}
+                    <option value={{this}}>{{this}}</option>
+                 {{/each}}
+                </select>
+                <input type="text" name="data">
+            </div>
+        </div>
+    </div>
+<input type="submit" value="submit">
+</form>
+<a href="/generatePDF">Generate Invoices</a>
+<a href="/download">download</a>
+<a href="static/pdf/invoice1.pdf" target="_blank">preview</a>
+<button  id="click">add</button>
