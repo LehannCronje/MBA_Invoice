@@ -9,7 +9,7 @@
     "docxtemplater": "^3.13.6",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "jszip": "^2.2.2",
+    "jszip": "^3.8.0",
     "node-datetime": "^2.1.2",
     "nodemon": "^1.19.1",
     "office-converter": "^1.0.2",
